@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 100px;
+}
+.currency {
+  width: 350px;
+}
+
+.currency__title {
+  font-size: 36px;
+}
+
+.currency__filter {
+  margin: 20px 0;
+}
+
+.currency__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.currency__icon {
+  margin-right: 10px;
+  width: 30px;
+}
+
+.currency__code{
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+.currency__button {
+  background-color: white;
+  border: 1px solid #1C6FA6;
+  color: black;
+  width: 60px;
+  padding: 3px 0px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.currency__button--pressed{
+  background-color: #1C6FA6;
+  color: white;
+}
+
+.currency__button:hover {
+  background-color: #1C6FA6;
+  color: white;
+}
+
+.transaction__money, .transaction__date, .transaction__state, .transaction__text {
+  margin-left: 20px;
+}
+
+.transaction__state--done {
+  color: green;
+}
+
+.transaction__state--fail {
+  color: red;
+}
+
+.transaction__state--pending {
+  color: orange;
+}

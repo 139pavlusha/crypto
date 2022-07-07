@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/currency-line.css">
+  <link rel="stylesheet" href="./css/currency.css">
+  <link rel="stylesheet" href="./css/form.css">
+
+  <title>Cryptocurrency</title>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <ul class="nav">
+      <li class="nav__item"><a href="#" class="nav__link">Обмен</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">FAQ</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+    </ul>
+
+    <div class="logo">
+        <img src="./images/logo.png" alt="logo" class="logo">
+    </div>
+
+    <div class="contacts">
+      <div class="contacts__item">
+        <img src="./images/chat.ico" alt="chat" class="contacts__img">
+        <a href="#" class="contacts__link">Онлайн-чат</a>
+      </div>
+      <div class="contacts__item">
+        <img src="./images/telegram.png" alt="tg" class="contacts__img">
+        <a href="#" class="contacts__link">@crypto</a>
+      </div>
+      <div class="login">
+        <img src="images/login.png" alt="login" class="login__img">
+        <a href="" class="login__link">Личный кабинет</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- CURRENCY LINE -->
+  <ul class="currency-line">
+    <li class="currency-line__text">BTC = 56151.40$</li>
+    <li class="currency-line__text">ETH = 1769.86$</li>
+    <li class="currency-line__text">USD = 73.10₽</li>
+    <li class="currency-line__text">EUR = 87.19₽</li>
+  </ul>
+
+  <!-- CONTAINER -->
+  <div class="container">
+    <!-- CURRENCY -->
+    <div class="currency">
+      <h2 class="currency__title">Список валют</h2>
+      <div class="currency__filter">
+        <button class="currency__button currency__button--pressed">Все</button>
+        <button class="currency__button">Крипта</button>
+        <button class="currency__button">ПС</button>
+        <button class="currency__button">Банки</button>
+        <button class="currency__button">Нал</button>
+      </div>
+      <div class="currency__list">
+        <ul class="currency__line">
+          <li class="currency__item">
+            <img src="images/btc.ico" alt="btc" class="currency__icon">
+            <p class="currency__text">Bitcoin</p>
+            <p class="currency__code">BTC</p>
+          </li>
+          <li class="currency__item">
+            <img src="images/eth.png" alt="eth" class="currency__icon">
+            <p class="currency__text">Ethereum</p>
+            <p class="currency__code">ETH</p>
+          </li>
+          <li class="currency__item">
+            <img src="images/usdt.png" alt="usdt" class="currency__icon">
+            <p class="currency__text">Tether</p>
+            <p class="currency__code">USDT</p>
+          </li>
+          <li class="currency__item">
+            <img src="images/eos.png" alt="eos" class="currency__icon">
+            <p class="currency__text">EOS</p>
+            <p class="currency__code">EOS</p>
+          </li>
+          <li class="currency__item">
+            <img src="images/ltc.png" alt="ltc" class="currency__icon">
+            <p class="currency__text">Litecoin</p>
+            <p class="currency__code">LTC</p>
+          </li>
+          <li class="currency__item">
+            <img src="images/xmr.svg" alt="xmr" class="currency__icon">
+            <p class="currency__text">Monero</p>
+            <p class="currency__code">XMR</p>
+          </li>
+        </ul>
+        <ul class="currency__line">
+          <li class="currency__item">
+            <img src="images/neo.png" alt="neo" class="currency__icon">
+            <p class="currency__text">NEO</p>
+            <p class="currency__code">NEO</p>
+          </li>
+          <li class="currency__item">
+            <img src="images/xrp.png" alt="xrp" class="currency__icon">
+            <p class="currency__text">Ripple</p>
+            <p class="currency__code">XRP</p>
+          </li>
+          <li class="currency__item">
+            <img src="images/xlm.png" alt="xlm" class="currency__icon">
+            <p class="currency__text">Stellarlumens</p>
+            <p class="currency__code">XLM</p>
+          </li>
+          <li class="currency__item">
+            <img src="images/zec.jpeg" alt="zec" class="currency__icon">
+            <p class="currency__text">Zcash</p>
+            <p class="currency__code">ZEC</p>
+          </li>
+          <li class="currency__item">
+            <img src="images/ac.png" alt="ac" class="currency__icon">
+            <p class="currency__text">Advanced Cash</p>
+            <p class="currency__code">USD</p>
+          </li>
+          <li class="currency__item">
+            <img src="images/exmo.png" alt="exmorub" class="currency__icon">
+            <p class="currency__text">EXMO code</p>
+            <p class="currency__code">RUB</p>
+          </li>
+        </ul>
+        <ul class="currency__line">
+          <li class="currency__item">
+            <img src="images/exmo.png" alt="exmousd" class="currency__icon">
+            <p class="currency__text">EXMO code</p>
+            <p class="currency__code">USD</p>
+          </li>
+          <li class="currency__item">
+            <img src="images/qiwi.png" alt="qiwi" class="currency__icon">
+            <p class="currency__text">QIWI</p>
+            <p class="currency__code">RUB</p>
+          </li>
+          <li class="currency__item">
+            <img src="images/payeer.png" alt="payeer" class="currency__icon">
+            <p class="currency__text">Payeer</p>
+            <p class="currency__code">RUB</p>
+          </li>
+          <li class="currency__item">
+            <img src="images/pm.png" alt="pm" class="currency__icon">
+            <p class="currency__text">Perfect Money</p>
+            <p class="currency__code">USD</p>
+          </li>
+          <li class="currency__item">
+            <img src="images/sber.jpeg" alt="sber" class="currency__icon">
+            <p class="currency__text">Сбербанк</p>
+            <p class="currency__code">RUB</p>
+          </li>
+          <li class="currency__item">
+            <img src="images/tinkoff.png" alt="tks" class="currency__icon">
+            <p class="currency__text">ТКС QR-код</p>
+            <p class="currency__code">RUB</p>
+          </li>
+        </ul>
+        <ul class="currency__line">
+          <li class="currency__item">
+            <img src="images/tinkoff.png" alt="tinkoff" class="currency__icon">
+            <p class="currency__text">Тинькофф Онлайн</p>
+            <p class="currency__code">RUB</p>
+          </li>
+          <li class="currency__item">
+            <img src="images/money.png" alt="mrub" class="currency__icon">
+            <p class="currency__text">Наличные</p>
+            <p class="currency__code">RUB</p>
+          </li>
+          <li class="currency__item">
+            <img src="images/money.png" alt="musd" class="currency__icon">
+            <p class="currency__text">Наличные</p>
+            <p class="currency__code">USD</p>
+          </li>
+          <li class="currency__item">
+            <img src="images/money.png" alt="meur" class="currency__icon">
+            <p class="currency__text">Наличные</p>
+            <p class="currency__code">EUR</p>
+          </li>
+          <li class="currency__item">
+            <img src="images/money.png" alt="me" class="currency__icon">
+            <p class="currency__text">Наличные Европа</p>
+            <p class="currency__code">EUR</p>
+          </li>
+          <li class="currency__item">
+            <img src="images/wu.png" alt="wu" class="currency__icon">
+            <p class="currency__text">Western Union</p>
+            <p class="currency__code">USD</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- FORM -->
+    <div class="form">
+      <form action="#" class="form__form">
+        <div class="form__convert">
+          <div class="select">
+            <select name="buy" id="buy">
+              <option value="Bitcoin BTC">Bitcoin BTC</option>
+              <option value="Ethereum ETH">Ethereum ETH</option>
+              <option value="Tether USDT">Tether USDT</option>
+              <option value="EOS EOS">EOS EOS</option>
+              <option value="Litecoin LTC">Litecoin LTC</option>
+              <option value="Monero XMR">Monero XMR</option>
+              <option value="NEO NEO">NEO NEO</option>
+              <option value="Ripple XRP">Ripple XRP</option>
+              <option value="Stellarlumens XLM">Stellarlumens XLM</option>
+              <option value="Zcash ZEC">Zcash ZEC</option>
+              <option value="Advanced Cash USD">Advanced Cash USD</option>
+              <option value="EXMO code RUB">EXMO code RUB</option>
+              <option value="EXMO code USD">EXMO code USD</option>
+              <option value="QIWI RUB">QIWI RUB</option>
+              <option value="Payyer RUB">Payyer RUB</option>
+              <option value="Perfect Money USD">Perfect Money USD</option>
+              <option value="Сбербанк RUB">Сбербанк RUB</option>
+              <option value="ТКС QR-код RUB">ТКС QR-код RUB</option>
+              <option value="Тинькофф Онлайн RUB">Тинькофф Онлайн RUB</option>
+              <option value="Наличные RUB">Наличные RUB</option>
+              <option value="Наличные USD">Наличные USD</option>
+              <option value="Наличные EUR">Наличные EUR</option>
+              <option value="Наличные Европа EUR">Наличные Европа EUR</option>
+              <option value="Western Union USD">Western Union USD</option>
+            </select>
+          </div>
+          <p class="form__equel">=</p>
+          <div class="select">
+            <select name="sell" id="sell">
+              <option value="Bitcoin BTC">Bitcoin BTC</option>
+              <option value="Ethereum ETH">Ethereum ETH</option>
+              <option value="Tether USDT">Tether USDT</option>
+              <option value="EOS EOS">EOS EOS</option>
+              <option value="Litecoin LTC">Litecoin LTC</option>
+              <option value="Monero XMR">Monero XMR</option>
+              <option value="NEO NEO">NEO NEO</option>
+              <option value="Ripple XRP">Ripple XRP</option>
+              <option value="Stellarlumens XLM">Stellarlumens XLM</option>
+              <option value="Zcash ZEC">Zcash ZEC</option>
+              <option value="Advanced Cash USD">Advanced Cash USD</option>
+              <option value="EXMO code RUB">EXMO code RUB</option>
+              <option value="EXMO code USD">EXMO code USD</option>
+              <option value="QIWI RUB">QIWI RUB</option>
+              <option value="Payyer RUB">Payyer RUB</option>
+              <option value="Perfect Money USD">Perfect Money USD</option>
+              <option value="Сбербанк RUB">Сбербанк RUB</option>
+              <option value="ТКС QR-код RUB">ТКС QR-код RUB</option>
+              <option value="Тинькофф Онлайн RUB">Тинькофф Онлайн RUB</option>
+              <option value="Наличные RUB">Наличные RUB</option>
+              <option value="Наличные USD">Наличные USD</option>
+              <option value="Наличные EUR">Наличные EUR</option>
+              <option value="Наличные Европа EUR">Наличные Европа EUR</option>
+              <option value="Western Union USD">Western Union USD</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form__money">
+          <input type="text" class="form__money-input">
+          <p class="form__equel">=</p>
+          <input type="text" class="form__money-input">
+        </div>
+  
+        <div class="form__card">
+          <img src="images/wallet.webp" alt="card" class="form__card-icon">
+          <input type="text" class="form__card-input" placeholder="7a544d62f219936fa52702915ade53a4936fa52702915">
+        </div>
+  
+        <div class="form__email">
+          <img src="images/email.png" alt="email" class="form__email-icon">
+          <input type="email" class="form__email-input" placeholder="example@email.com">
+          <button class="form__send">
+            <img src="./images/change.png" alt="send" class="form__send-img">
+            <p class="form__send-text">Обменять</p>
+          </button>
+        </div>
+      </form>
+  
+      <div class="form__caution">
+        <img src="images/caution.png" alt="caution" class="form__caution-img">
+        <p class="form__caution-text">Внимательно проверьте адресс криптовалютного кошелька! Транзакции невозможно обернуть вспять и сделать возврат после того, как они ушли в сеть</p>
+      </div>
+  
+      <div class="form__message">
+        <img src="images/message.png" alt="message" class="form__message-img">
+        <p class="form__message-text">После того как вы создали заявку обратитесь в чат к нашим операторам и они предоставят вам ссылку для оплаты</p>
+      </div>
+  
+      <div class="form__wait">
+        <img src="images/wait.png" alt="wait" class="form__wait-img">
+        <p class="form__wait-text">После получения счета вы должны оплатить его в течении 20 минут</p>
+      </div>
+  
+      <div class="form__info">
+        <img src="images/loading.png" alt="info" class="form__info-img">
+        <p class="form__info-text">Перевод криптовалюты выполняется в течении 30 минут после получения оплаты. Задержки могут быть только на стороне биржи, с которой мы переводим Вам криптовалюту</p>
+      </div>
+    </div>
+
+    <!-- TRANSACTIONS -->
+    <div class="transaction">
+      <h2 class="currency__title">Недавние транзакции</h2>
+      <div class="currency__filter">
+        <button class="currency__button currency__button--pressed">Все</button>
+        <button class="currency__button">Крипта</button>
+        <button class="currency__button">ПС</button>
+        <button class="currency__button">Банки</button>
+        <button class="currency__button">Нал</button>
+      </div>
+      <div class="currency__list">
+        <ul class="currency__line">
+          <li class="currency__item">
+            <img src="images/btc.ico" alt="btc" class="currency__icon">
+            <p class="transaction__text">Bitcoin</p>
+            <p class="transaction__money">0.0254BTC</p>
+            <p class="transaction__date">07 Jul. 2022</p>
+            <p class="transaction__state transaction__state--pending">Ожидается</p>
+          </li>
+          <li class="currency__item">
+            <img src="images/eth.png" alt="eth" class="currency__icon">
+            <p class="transaction__text">Ethereum</p>
+            <p class="transaction__money">0.1024ETH</p>
+            <p class="transaction__date">07 Jul. 2022</p>
+            <p class="transaction__state transaction__state--done">Успешно</p>
+          </li>
+          <li class="currency__item">
+            <img src="images/btc.ico" alt="btc" class="currency__icon">
+            <p class="transaction__text">Bitcoin</p>
+            <p class="transaction__money">0.0025BTC</p>
+            <p class="transaction__date">04 Jul. 2022</p>
+            <p class="transaction__state transaction__state--done">Успешно</p>
+          </li>
+          <li class="currency__item">
+            <img src="images/xrp.png" alt="xrp" class="currency__icon">
+            <p class="transaction__text">Ripple</p>
+            <p class="transaction__money">5.21XRP</p>
+            <p class="transaction__date">04 Jul. 2022</p>
+            <p class="transaction__state transaction__state--fail">Отказано</p>
+          </li>
+          <li class="currency__item">
+            <img src="images/exmo.png" alt="exmo" class="currency__icon">
+            <p class="transaction__text">EXMO code</p>
+            <p class="transaction__money">57391RUB</p>
+            <p class="transaction__date">02 Jul. 2022</p>
+            <p class="transaction__state transaction__state--fail">Отказано</p>
+          </li>
+          <li class="currency__item">
+            <img src="images/tinkoff.png" alt="tinkoff" class="currency__icon">
+            <p class="transaction__text">Тинькофф Онлайн</p>
+            <p class="transaction__money">12300RUB</p>
+            <p class="transaction__date">29 Jun. 2022</p>
+            <p class="transaction__state transaction__state--done">Успешно</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
