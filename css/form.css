@@ -149,3 +149,8 @@ select::-ms-expand {
   font-size: 20px;
 }
 
+.form__caution {
+  border: 1px solid orange;
+  padding: 15px;
+}
+

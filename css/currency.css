@@ -1,10 +1,16 @@
+body {
+  background: rgb(255,255,255);
+  background: linear-gradient(87deg, rgba(255,255,255,1) 0%, rgba(247,251,255,1) 42%, rgba(242,248,255,1) 66%, rgba(239,247,255,1) 80%, rgba(233,244,255,1) 100%);
+}
+
 .container {
   display: flex;
   justify-content: space-between;
-  padding: 30px 100px;
 }
 .currency {
   width: 350px;
+  padding: 30px 0 0 100px;
+  box-shadow: 0px 0px 10px #1C6FA6;
 }
 
 .currency__title {
@@ -54,8 +60,15 @@
   color: white;
 }
 
+.transaction {
+  width: 100%;
+  padding: 20px 20px;
+  box-shadow: 0px 0px 10px #1C6FA6;
+  margin-top: 50px;
+}
+
 .transaction__money, .transaction__date, .transaction__state, .transaction__text {
-  margin-left: 20px;
+  margin-left: 80px;
 }
 
 .transaction__state--done {
