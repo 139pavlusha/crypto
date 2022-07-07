@@ -67,8 +67,58 @@ body {
   margin-top: 50px;
 }
 
-.transaction__money, .transaction__date, .transaction__state, .transaction__text {
-  margin-left: 80px;
+.transaction__line{
+  width: 100%;
+}
+
+.transaction__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.transaction__title {
+  font-size: 36px;
+  text-align: center;
+}
+
+.transaction__item--header {
+  font-weight: 700;
+}
+
+.transaction__info-sell {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 35%;
+}
+
+.transaction__info-buy {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 0;
+}
+
+.transaction__icon {
+  width: 25px;
+  margin-right: 15px;
+}
+
+.transaction__date {
+  position: absolute;
+  left: 70%;
+}
+
+.transaction__state {
+  position: absolute;
+  left: 85%;
+}
+
+.transaction__text {
+  margin-right: 20px;
 }
 
 .transaction__state--done {
@@ -81,4 +131,29 @@ body {
 
 .transaction__state--pending {
   color: orange;
+}
+
+table {
+  width: 100%;
+  font-size: 18px;
+}
+
+th {
+  font-weight: 700;
+}
+
+tr {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+td {
+  display: flex;
+  align-items: center;
+}
+
+table, th, td {
+  border:1px solid black;
 }

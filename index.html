@@ -40,10 +40,6 @@
         <img src="./images/telegram.png" alt="tg" class="contacts__img">
         <a href="#" class="contacts__link">@crypto</a>
       </div>
-      <div class="login">
-        <img src="images/login.png" alt="login" class="login__img">
-        <a href="" class="login__link">Личный кабинет</a>
-      </div>
     </div>
   </header>
 
@@ -306,75 +302,88 @@
 
             <!-- TRANSACTIONS -->
             <div class="transaction">
-              <h2 class="currency__title">Недавние транзакции</h2>
-              <div class="currency__filter">
-                <button class="currency__button currency__button--pressed">Все</button>
-                <button class="currency__button">Крипта</button>
-                <button class="currency__button">ПС</button>
-                <button class="currency__button">Банки</button>
-                <button class="currency__button">Нал</button>
-              </div>
-
-              <table>
-                <tr>
-                  <th>Company</th>
-                  <th>Contact</th>
-                  <th>Country</th>
-                </tr>
-                <tr>
-                  <td>Alfreds Futterkiste</td>
-                  <td>Maria Anders</td>
-                  <td>Germany</td>
-                </tr>
-                <tr>
-                  <td>Centro comercial Moctezuma</td>
-                  <td>Francisco Chang</td>
-                  <td>Mexico</td>
-                </tr>
-              </table> 
-              <div class="currency__list">
-                <ul class="currency__line">
-                  <li class="currency__item">
-                    <img src="images/btc.ico" alt="btc" class="currency__icon">
-                    <p class="transaction__text">Bitcoin</p>
-                    <p class="transaction__money">0.0254BTC</p>
+              <h2 class="transaction__title">Недавние транзакции</h2>
+              <div >
+                <ul class="transaction__line">
+                  <li class="transaction__item transaction__item--header">
+                    <div class="transaction__info-buy">
+                      <p class="transaction__text">Продал</p>
+                    </div>
+                    <div class="transaction__info-sell">
+                      <p class="transaction__text">Купил</p>
+                    </div>
+                    <p class="transaction__date">Дата</p>
+                    <p class="transaction__state">Состояние</p>
+                  </li>
+                  <li class="transaction__item">
+                    <div class="transaction__info-buy">
+                      <img src="images/btc.ico" alt="btc" class="currency__icon">
+                      <p class="transaction__text">Bitcoin</p>
+                      <p class="transaction__money">0.0254 BTC</p>
+                    </div>
+                    <div class="transaction__info-sell">
+                      <img src="images/eth.png" alt="eth" class="currency__icon">
+                      <p class="transaction__text">Ethereum</p>
+                      <p class="transaction__money">0.1024 ETH</p>
+                    </div>
                     <p class="transaction__date">07 Jul. 2022</p>
                     <p class="transaction__state transaction__state--pending">Ожидается</p>
                   </li>
-                  <li class="currency__item">
-                    <img src="images/eth.png" alt="eth" class="currency__icon">
-                    <p class="transaction__text">Ethereum</p>
-                    <p class="transaction__money">0.1024ETH</p>
+                  <li class="transaction__item">
+                    <div class="transaction__info-buy">
+                      <img src="images/xrp.png" alt="xrp" class="currency__icon">
+                      <p class="transaction__text">Ripple</p>
+                      <p class="transaction__money">2.56 XRP</p>
+                    </div>
+                    <div class="transaction__info-sell">
+                      <img src="images/xmr.svg" alt="xmr" class="currency__icon">
+                      <p class="transaction__text">Monero</p>
+                      <p class="transaction__money">4.25 XMR</p>
+                    </div>
                     <p class="transaction__date">07 Jul. 2022</p>
-                    <p class="transaction__state transaction__state--done">Успешно</p>
+                    <p class="transaction__state transaction__state--pending">Ожидается</p>
                   </li>
-                  <li class="currency__item">
-                    <img src="images/btc.ico" alt="btc" class="currency__icon">
-                    <p class="transaction__text">Bitcoin</p>
-                    <p class="transaction__money">0.0025BTC</p>
-                    <p class="transaction__date">04 Jul. 2022</p>
-                    <p class="transaction__state transaction__state--done">Успешно</p>
+                  <li class="transaction__item">
+                    <div class="transaction__info-buy">
+                      <img src="images/money.png" alt="money" class="currency__icon">
+                      <p class="transaction__text">Наличные</p>
+                      <p class="transaction__money">12300 RUB</p>
+                    </div>
+                    <div class="transaction__info-sell">
+                      <img src="images/neo.png" alt="neo" class="currency__icon">
+                      <p class="transaction__text">NEO</p>
+                      <p class="transaction__money">56.21 NEO</p>
+                    </div>
+                    <p class="transaction__date">07 Jul. 2022</p>
+                    <p class="transaction__state transaction__state--pending">Ожидается</p>
                   </li>
-                  <li class="currency__item">
-                    <img src="images/xrp.png" alt="xrp" class="currency__icon">
-                    <p class="transaction__text">Ripple</p>
-                    <p class="transaction__money">5.21XRP</p>
-                    <p class="transaction__date">04 Jul. 2022</p>
-                    <p class="transaction__state transaction__state--fail">Отказано</p>
+                  <li class="transaction__item">
+                    <div class="transaction__info-buy">
+                      <img src="images/money.png" alt="money" class="currency__icon">
+                      <p class="transaction__text">Наличные</p>
+                      <p class="transaction__money">312 USD</p>
+                    </div>
+                    <div class="transaction__info-sell">
+                      <img src="images/zec.jpeg" alt="zec" class="currency__icon">
+                      <p class="transaction__text">Zcash</p>
+                      <p class="transaction__money">98.70 ZEC</p>
+                    </div>
+                    <p class="transaction__date">07 Jul. 2022</p>
+                    <p class="transaction__state transaction__state--pending">Ожидается</p>
                   </li>
-                  <li class="currency__item">
-                    <img src="images/exmo.png" alt="exmo" class="currency__icon">
-                    <p class="transaction__text">EXMO code</p>
-                    <p class="transaction__money">57391RUB</p>
-                    <p class="transaction__date">02 Jul. 2022</p>
-                    <p class="transaction__state transaction__state--fail">Отказано</p>
-                  </li>
-                  <li class="currency__item">
-                    <img src="images/tinkoff.png" alt="tinkoff" class="currency__icon">
-                    <p class="transaction__text">Тинькофф Онлайн</p>
-                    <p class="transaction__money">12300RUB</p>
-                    <p class="transaction__date">29 Jun. 2022</p>
-                    <p class="transaction__state transaction__state--done">Успешно</p>
+                  <li class="transaction__item">
+                    <div class="transaction__info-buy">
+                      <img src="images/xlm.png" alt="xlm" class="currency__icon">
+                      <p class="transaction__text">Stellarlumens</p>
+                      <p class="transaction__money">78.56 XLM</p>
+                    </div>
+                    <div class="transaction__info-sell">
+                      <img src="images/qiwi.png" alt="qiwi" class="currency__icon">
+                      <p class="transaction__text">QIWI</p>
+                      <p class="transaction__money">7240.50 RUB</p>
+                    </div>
+                    <p class="transaction__date">07 Jul. 2022</p>
+                    <p class="transaction__state transaction__state--pending">Ожидается</p>
                   </li>
                 </ul>
               </div>
