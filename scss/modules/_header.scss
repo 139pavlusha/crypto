@@ -1,0 +1,47 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 70px;
+}
+
+.nav {
+  display: flex;
+
+  &__link {
+    margin-right: 20px;
+    transition: .3s;
+
+    &:hover {
+      color: #1C6FA6;
+      border-bottom: 1px solid #1C6FA6;
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  width: 120px;
+  transition: .3s;
+}
+
+.contacts {
+  display: flex;
+
+  &__item {
+    margin-right: 20px;
+  }
+
+  &__link{
+    transition: .3s;
+
+    &:hover {
+      color: #1C6FA6;
+      border-bottom: 1px solid #1C6FA6;
+    }
+  }
+
+  &__img {
+    width: 20px;
+  }
+}
