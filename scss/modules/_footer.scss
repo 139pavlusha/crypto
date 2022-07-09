@@ -1,0 +1,54 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  position: relative;
+  background-color: $footer-bg;
+  margin-top: 50px;
+  width: 100%;
+
+  @media (max-width: 980px) {
+    padding: 20px 0;
+  }
+}
+
+.chat {
+  position: absolute;
+  width: 60px;
+  right: 5%;
+  top: calc(50% - 30px);
+  transition: .3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 650px) {
+    width: 40px;
+  }
+}
+
+.nav1 {
+  display: flex;
+
+  @media (max-width: 980px) {
+    flex-direction: column;
+  }
+
+  &__item {
+    @media (max-width: 980px) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__link {
+    margin-right: 20px;
+    transition: .3s;
+
+    &:hover {
+      color: $blue-color;
+      border-bottom: 1px solid $blue-color;
+    }
+  }
+}

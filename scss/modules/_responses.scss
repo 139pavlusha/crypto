@@ -1,0 +1,54 @@
+.responses {
+  margin: 100px 15%;
+  font-size: 16px;
+
+  @media (max-width: 1280px) {
+    margin: 70px 8%;
+  }
+
+  @media (max-width: 980px) {
+    margin: 40px 5%;
+
+    font-size: 14px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__info {
+    line-height: 1.5;
+    text-indent: 1.5em;
+    margin-bottom: 15px;
+  }
+
+  &__list {
+    margin-top: 50px;
+  }
+
+  &__item {
+    box-shadow: 0px 0px 10px $blue-color;
+    padding: 20px 40px;
+    border-radius: 25px;
+    position: relative;
+    margin-bottom: 15px;
+  }
+
+  &__name {
+    font-size: 18px;
+    color: $blue-color;
+    margin-bottom: 10px;
+  }
+
+  &__date {
+    font-size: 14px;
+    color: $grey-color;
+    letter-spacing: 2px;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+  }
+}
