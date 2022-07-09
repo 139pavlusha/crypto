@@ -161,6 +161,13 @@ header {
   }
 }
 
+@media (max-width: 480px) {
+  .currency-line__text {
+    margin: 10px 9px;
+    font-size: 10px;
+  }
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -206,9 +213,7 @@ header {
 
 @media (max-width: 980px) {
   .currency {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -362,6 +367,12 @@ select::-ms-expand {
 @media (max-width: 800px) {
   .form {
     width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .form {
+    padding: 20px 10px;
   }
 }
 
@@ -569,6 +580,14 @@ select::-ms-expand {
   margin-top: 50px;
 }
 
+@media (max-width: 500px) {
+  .transaction {
+    padding: 20px 0px;
+    -webkit-box-shadow: 0px 0px 0px #1C6FA6;
+            box-shadow: 0px 0px 0px #1C6FA6;
+  }
+}
+
 .transaction__line {
   width: 100%;
 }
@@ -601,60 +620,94 @@ select::-ms-expand {
 }
 
 .transaction__info-sell {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  left: 35%;
+  width: 35%;
 }
 
 @media (max-width: 1500px) {
   .transaction__info-sell {
-    left: 42.5%;
+    width: 42.5%;
   }
 }
 
 @media (max-width: 1270px) {
   .transaction__info-sell {
-    left: 50%;
+    width: 50%;
   }
 }
 
 @media (max-width: 980px) {
   .transaction__info-sell {
-    left: 35%;
+    width: 35%;
   }
 }
 
 @media (max-width: 650px) {
   .transaction__info-sell {
-    left: 42.5%;
+    width: 42.5%;
   }
 }
 
 @media (max-width: 550px) {
   .transaction__info-sell {
-    left: 55%;
+    width: 55%;
   }
 }
 
 .transaction__info-buy {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  left: 0;
+  width: 35%;
+}
+
+@media (max-width: 1500px) {
+  .transaction__info-buy {
+    width: 42.5%;
+  }
+}
+
+@media (max-width: 1270px) {
+  .transaction__info-buy {
+    width: 50%;
+  }
+}
+
+@media (max-width: 980px) {
+  .transaction__info-buy {
+    width: 35%;
+  }
+}
+
+@media (max-width: 650px) {
+  .transaction__info-buy {
+    width: 42.5%;
+  }
+}
+
+@media (max-width: 550px) {
+  .transaction__info-buy {
+    width: 55%;
+  }
 }
 
 .transaction__icon {
   width: 25px;
   margin-right: 15px;
+}
+
+@media (max-width: 420px) {
+  .transaction__icon {
+    margin-right: 0px;
+  }
 }
 
 .transaction__text {
@@ -668,13 +721,12 @@ select::-ms-expand {
 }
 
 .transaction__date {
-  position: absolute;
-  left: 70%;
+  width: 15%;
 }
 
 @media (max-width: 1500px) {
   .transaction__date {
-    left: 85%;
+    width: 7.5%;
   }
 }
 
@@ -686,7 +738,7 @@ select::-ms-expand {
 
 @media (max-width: 980px) {
   .transaction__date {
-    left: 70%;
+    width: 15%;
     display: block;
   }
 }
@@ -698,8 +750,7 @@ select::-ms-expand {
 }
 
 .transaction__state {
-  position: absolute;
-  left: 85%;
+  width: 15%;
 }
 
 @media (max-width: 1500px) {
@@ -710,7 +761,7 @@ select::-ms-expand {
 
 @media (max-width: 980px) {
   .transaction__state {
-    left: 85%;
+    width: 15%;
     display: block;
   }
 }
