@@ -1,4 +1,4 @@
-let $options = document.querySelectorAll('ul.list label');
+let $options = document.querySelectorAll('ul label');
 for (let i = 0; i < $options.length; i++) {
   $options[i].addEventListener('click', () => {
     document.querySelectorAll('details')[0].removeAttribute("open")
