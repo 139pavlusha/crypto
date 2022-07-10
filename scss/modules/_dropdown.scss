@@ -1,6 +1,5 @@
 details {
   position: relative;
-  margin-right: 1rem;
   width: calc(50% - 31px);
 
   @media (max-width: 450px) {
@@ -48,7 +47,13 @@ summary:after {
   border-bottom-left-radius: 2px;
   transform: rotate(45deg) translate(50%, 0%);
   transform-origin: center center;
-  transition: transform ease-in-out 100ms
+  transition: transform ease-in-out 100ms;
+
+  @media (max-width: 540px) {
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 4px);
+  }
 }
 
 summary:focus {
@@ -73,16 +78,16 @@ details ul {
   overflow-y: auto;
   border: 1px solid $blue-color;
 
-  @media (max-width: 450px) {
-    width: 300px;
-  }
+  // @media (max-width: 450px) {
+  //   width: 300px;
+  // }
 }
 
-details ul.list-right {
-  @media (max-width: 450px) {
-    left: -160px;
-  }
-}
+// details ul.list-right {
+//   @media (max-width: 450px) {
+//     left: -160px;
+//   }
+// }
 
 details li {
   margin: 0;

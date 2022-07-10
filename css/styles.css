@@ -1037,7 +1037,6 @@ select::-ms-expand {
 
 details {
   position: relative;
-  margin-right: 1rem;
   width: calc(50% - 31px);
 }
 
@@ -1095,6 +1094,14 @@ summary:after {
   transition: transform ease-in-out 100ms, -webkit-transform ease-in-out 100ms;
 }
 
+@media (max-width: 540px) {
+  summary:after {
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 4px);
+  }
+}
+
 summary:focus {
   outline: none;
 }
@@ -1118,18 +1125,6 @@ details ul {
   max-height: 375px;
   overflow-y: auto;
   border: 1px solid #1C6FA6;
-}
-
-@media (max-width: 450px) {
-  details ul {
-    width: 300px;
-  }
-}
-
-@media (max-width: 450px) {
-  details ul.list-right {
-    left: -160px;
-  }
 }
 
 details li {
