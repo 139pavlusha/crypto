@@ -21,36 +21,6 @@ select {
   }
 }
 
-.select {
-  position: relative;
-  display: flex;
-  width: calc(50% - 31px);
-  height: 3em;
-  line-height: 3;
-  overflow: hidden;
-  border-radius: 20px;
-  border: 1px solid $blue-color;
-
-  @media (max-width: 450px) {
-    width: calc(50% - 18px);
-  }
-
-  &::after {
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    color: $blue-color;
-    content: '\25BC';
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 0 1em;
-    background: $white-color;
-    cursor:pointer;
-    pointer-events:none;
-    transition:.25s all ease;
-  }
-}
-
 .form {
   margin-top: 50px;
   width: 780px;
