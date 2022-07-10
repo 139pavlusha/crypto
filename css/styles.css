@@ -1058,6 +1058,7 @@ summary {
   border-radius: 25px;
   border: 1px solid #1C6FA6;
   list-style: none;
+  position: relative;
 }
 
 summary::-webkit-details-marker {
@@ -1098,7 +1099,7 @@ summary:after {
   summary:after {
     position: absolute;
     right: 10px;
-    top: calc(50% - 4px);
+    top: calc(50% - 5px);
   }
 }
 
@@ -1127,6 +1128,18 @@ details ul {
   border: 1px solid #1C6FA6;
 }
 
+@media (max-width: 450px) {
+  details ul {
+    width: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  details ul.list-right {
+    left: -160px;
+  }
+}
+
 details li {
   margin: 0;
   padding: 1rem 0;
@@ -1142,7 +1155,6 @@ details li:last-child {
   border-bottom: none;
 }
 
-/* FAKE SELECT */
 summary.radios {
   counter-reset: radios;
 }

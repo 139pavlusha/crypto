@@ -19,6 +19,7 @@ summary {
   border-radius: 25px;
   border: 1px solid $blue-color;
   list-style: none;
+  position: relative;
 }
 
 summary::-webkit-details-marker {
@@ -52,7 +53,7 @@ summary:after {
   @media (max-width: 540px) {
     position: absolute;
     right: 10px;
-    top: calc(50% - 4px);
+    top: calc(50% - 5px);
   }
 }
 
@@ -78,16 +79,16 @@ details ul {
   overflow-y: auto;
   border: 1px solid $blue-color;
 
-  // @media (max-width: 450px) {
-  //   width: 300px;
-  // }
+  @media (max-width: 450px) {
+    width: 300px;
+  }
 }
 
-// details ul.list-right {
-//   @media (max-width: 450px) {
-//     left: -160px;
-//   }
-// }
+details ul.list-right {
+  @media (max-width: 450px) {
+    left: -160px;
+  }
+}
 
 details li {
   margin: 0;
@@ -104,7 +105,6 @@ details li:last-child {
   border-bottom: none;
 }
 
-/* FAKE SELECT */
 
 summary.radios {
   counter-reset: radios;
