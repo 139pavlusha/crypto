@@ -769,11 +769,23 @@ select::-ms-expand {
   }
 }
 
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 980px) {
+  .footer__container {
+    margin-bottom: 15px;
+  }
+}
+
 .chat {
-  position: absolute;
+  position: fixed;
   width: 60px;
-  right: 5%;
-  top: calc(50% - 30px);
+  right: 39px;
+  bottom: calc(30px);
   -webkit-transition: .3s;
   transition: .3s;
   cursor: pointer;
@@ -794,6 +806,9 @@ select::-ms-expand {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 980px) {
@@ -815,6 +830,13 @@ select::-ms-expand {
   margin-right: 20px;
   -webkit-transition: .3s;
   transition: .3s;
+}
+
+@media (max-width: 980px) {
+  .nav1__link {
+    color: #525252;
+    letter-spacing: 2px;
+  }
 }
 
 .nav1__link:hover {
@@ -1035,48 +1057,22 @@ select::-ms-expand {
   }
 }
 
-details {
+.custom-select {
   position: relative;
   width: calc(50% - 31px);
 }
 
 @media (max-width: 450px) {
-  details {
+  .custom-select {
     width: calc(50% - 18px);
   }
 }
 
-details[open] {
-  z-index: 1;
-}
-
 summary {
-  padding: 1rem;
-  cursor: pointer;
-  border-radius: 5px;
-  background-color: white;
-  border-radius: 25px;
-  border: 1px solid #1C6FA6;
-  list-style: none;
-  position: relative;
-}
-
-summary::-webkit-details-marker {
   display: none;
 }
 
-details[open] summary:before {
-  content: '';
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  background: transparent;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-summary:after {
+.select-input:after {
   content: '';
   display: inline-block;
   float: right;
@@ -1093,32 +1089,40 @@ summary:after {
   transition: -webkit-transform ease-in-out 100ms;
   transition: transform ease-in-out 100ms;
   transition: transform ease-in-out 100ms, -webkit-transform ease-in-out 100ms;
+  position: absolute;
+  right: 15px;
+  top: calc(50% - 6px);
 }
 
-@media (max-width: 540px) {
-  summary:after {
-    position: absolute;
-    right: 10px;
-    top: calc(50% - 5px);
-  }
-}
-
-summary:focus {
-  outline: none;
-}
-
-details[open] summary:after {
+.select-input.rotate:after {
   -webkit-transform: rotate(-45deg) translate(0%, 0%);
           transform: rotate(-45deg) translate(0%, 0%);
 }
 
-details ul {
+.select-input {
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
+  border-radius: 25px;
+  border: 1px solid #1C6FA6;
+  list-style: none;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 48px;
+}
+
+.custom-select ul {
   width: 100%;
   background: white;
   position: absolute;
   top: calc(100% + .5rem);
   left: 0;
-  padding: 1rem 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1129,65 +1133,41 @@ details ul {
 }
 
 @media (max-width: 450px) {
-  details ul {
+  .custom-select ul {
     width: 300px;
   }
 }
 
+.list-close {
+  visibility: hidden;
+}
+
 @media (max-width: 450px) {
-  details ul.list-right {
+  .custom-select #list-right {
     left: -160px;
   }
 }
 
-details li {
+.custom-select li {
   margin: 0;
-  padding: 1rem 0;
   border-bottom: 1px solid #1C6FA6;
 }
 
-details li:first-child {
+.custom-select li:first-child {
   padding-top: 0;
 }
 
-details li:last-child {
+.custom-select li:last-child {
   padding-bottom: 0;
   border-bottom: none;
 }
 
-summary.radios {
-  counter-reset: radios;
-}
-
-summary.radios:before {
-  content: var(--selection);
-}
-
-input[type=radio] {
-  counter-increment: radios;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  display: none;
-}
-
-input[type=radio]:checked {
-  display: inline;
-  --display: block;
-}
-
-input[type=radio]:after {
-  content: attr(title);
-  display: inline;
-  font-size: 1rem;
-}
-
-details ul.list {
+.custom-select ul.list {
   counter-reset: labels;
 }
 
-details label {
-  padding: 0 15px;
+.custom-select label {
+  padding: 15px 15px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1201,7 +1181,7 @@ details label {
           justify-content: start;
 }
 
-details label span {
+.custom-select label span {
   --display: none;
   display: var(--display);
   width: 1rem;
@@ -1210,6 +1190,6 @@ details label span {
   border-radius: 3px;
 }
 
-details .currency__code {
+.custom-select .currency__code {
   font-weight: 400;
 }

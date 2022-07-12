@@ -204,7 +204,9 @@
       <form action="#" class="form__form">
         <div class="form__convert">
           
-<details class="custom-select">
+<div class="custom-select">
+  <div class="select-input" id="select-input-sell">
+  </div>
   <summary class="radios">
     <input type="radio" name="item" id="default" title="Выберите валюту" checked>
     <input type="radio" name="item" id="item1-1" title="Bitcoin BTC">
@@ -231,9 +233,9 @@
     <input type="radio" name="item" id="item1-22" title="Наличные EUR">
     <input type="radio" name="item" id="item1-23" title="Наличные Европа EUR">
     <input type="radio" name="item" id="item1-24" title="Western Union USD">
-
   </summary>
-  <ul class="list">
+
+  <ul class="list-close" id="list-left">
     <li>
       <label for="item1-1">
         <img src="images/btc.ico" alt="btc" class="currency__icon">
@@ -402,9 +404,11 @@
       </label>
     </li>
   </ul>
-</details>
+</div>
 <p class="form__equel">=</p>
-<details class="custom-select">
+<div class="custom-select">
+  <div class="select-input" id="select-input-buy">
+  </div>
   <summary class="radios">
     <input type="radio" name="item2" id="default2" title="Выберите валюту" checked>
     <input type="radio" name="item2" id="item2-1" title="Bitcoin BTC">
@@ -433,7 +437,7 @@
     <input type="radio" name="item2" id="item2-24" title="Western Union USD">
 
   </summary>
-  <ul class="list-right">
+  <ul class="list-close" id="list-right">
     <li>
       <label for="item2-1">
         <img src="images/btc.ico" alt="btc" class="currency__icon">
@@ -601,7 +605,7 @@
       </label>
     </li>
   </ul>
-</details>
+</div>
 
 
 
@@ -940,14 +944,18 @@
 
   <footer class="footer">
     <ul class="nav1">
-      <li class="nav1__item"><a href="#" class="nav1__link">Обмен</a></li>
-      <li class="nav1__item"><a href="#" class="nav1__link">О нас</a></li>
-      <li class="nav1__item"><a href="#" class="nav1__link">FAQ</a></li>
-      <li class="nav1__item"><a href="#" class="nav1__link">Отзывы</a></li>
-      <li class="nav1__item"><a href="#" class="nav1__link">Контакты</a></li>
+      <div class="footer__container">
+        <li class="nav1__item"><a href="#" class="nav1__link">Обмен</a></li>
+        <li class="nav1__item"><a href="#" class="nav1__link">О нас</a></li>
+        <li class="nav1__item"><a href="#" class="nav1__link">FAQ</a></li>
+      </div>
+      <div class="footer__container">
+        <li class="nav1__item"><a href="#" class="nav1__link">Отзывы</a></li>
+        <li class="nav1__item"><a href="#" class="nav1__link">Контакты</a></li>
+      </div>
       <li class="nav1__item">
         <img src="./images/telegram.png" alt="tg" class="contacts__img">
-        <a href="#" class="contacts__link">@crypto</a>
+        <a href="#" class="contacts__link nav1__link">@crypto</a>
       </li>
     </ul> 
     
